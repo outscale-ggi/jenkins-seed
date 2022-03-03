@@ -1,4 +1,5 @@
 pipeline {
+        agent { label 'master' }
         stage('Create Jobs') {
             steps {
                 jobDsl targets: '**/job.groovy',
